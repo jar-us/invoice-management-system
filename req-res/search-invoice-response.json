@@ -1,0 +1,104 @@
+{
+    "detail": {
+        "invoice_number": "#123",
+        "invoice_date": "2018-11-12",
+        "invoice_time": "Military Time",
+        "payment": {
+            "due_date": "2018-11-22"
+        },
+        "alert": {
+            "enable_auto_alert": true
+        }
+    },
+    "merchant": {
+        "merchant_id": 112,
+        "name": {
+            "first_name": "Suraj",
+            "last_name": "Sharma"
+        },
+        "addresses": [
+            {
+                "street": "123",
+                "city": "Bangalore",
+                "state": "KA",
+                "country": "IN",
+                "pincode": "KA"
+            }
+        ],
+        "contacts": [
+            {
+                "phone_number": "1234567890",
+                "email": "xyz@gmail.com"
+            }
+        ]
+    },
+    "recipient": {
+        "billing_info": {
+            "customer_id": 333,
+            "name": {
+                "first_name": "Amit",
+                "last_name": "Hardware"
+            },
+            "addresses": [
+                {
+                    "street": "123",
+                    "city": "Bangalore",
+                    "state": "KA",
+                    "country": "IN",
+                    "pincode": "KA"
+                }
+            ],
+            "contacts": [
+                {
+                    "phone_number": "1234567890",
+                    "email": "xyz@gmail.com"
+                }
+            ]
+        },
+        "shipping_info": {
+            "shipping_address_id": 1244,
+            "name": {
+                "first_name": "Amit",
+                "last_name": "Hardaware"
+            },
+            "address": {
+                "street": "123",
+                "city": "Bangalore",
+                "state": "KA",
+                "country": "IN",
+                "pincode": "KA",
+                "phone_number": "12322222222"
+            }
+        }
+    },
+    "items": [
+        {
+            "name": "Yoga Mat",
+            "description": "Elastic mat to practice yoga.",
+            "quantity": "1",
+            "price": 12.12,
+            "item_id": 123
+        },
+        {
+            "name": "Yoga Shirt",
+            "description": "Elastic shirt to practice yoga.",
+            "quantity": "1",
+            "price": 12.12,
+            "item_id": 124
+        }
+    ],
+    "discounts": [
+        {
+            "name": "gabbar",
+            "percent": 0.0001,
+            "discount_id": 53
+        }
+    ],
+    "taxes": [
+        {
+            "name": "gabbar tax",
+            "percent": 70.0001,
+            "tax_id": 4444
+        }
+    ]
+}
