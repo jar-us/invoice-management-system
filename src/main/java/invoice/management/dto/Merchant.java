@@ -1,11 +1,15 @@
 package invoice.management.dto;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Collection;
 
-@Data
+//@Data
+@Setter
+@Getter
+//@AllArgsConstructor
+//@NoArgsConstructor
 @Entity
 @Table(name = "merchant")
 public class Merchant {
@@ -16,8 +20,11 @@ public class Merchant {
     private Long id;
 
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
 
     @OneToMany(mappedBy = "merchant")
     private Collection<Invoice> invoices;

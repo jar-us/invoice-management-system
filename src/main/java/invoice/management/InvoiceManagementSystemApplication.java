@@ -21,17 +21,17 @@ import java.util.HashSet;
 @ComponentScan("invoice.management")
 public class InvoiceManagementSystemApplication implements CommandLineRunner {
 
-    @Autowired
-    private InvoiceRepo invoiceRepo;
-
-    @Autowired
-    private MerchantRepo merchantRepo;
-
-    @Autowired
-    private CustomerRepo customerRepo;
-
-    @Autowired
-    private ProductRepo productRepo;
+//    @Autowired
+//    private InvoiceRepo invoiceRepo;
+//
+//    @Autowired
+//    private MerchantRepo merchantRepo;
+//
+//    @Autowired
+//    private CustomerRepo customerRepo;
+//
+//    @Autowired
+//    private ProductRepo productRepo;
 
 
     public static void main(String[] args) {
@@ -41,40 +41,40 @@ public class InvoiceManagementSystemApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Invoice invoice = new Invoice();
-
-        Merchant merchant = new Merchant();
-        merchant.setName("Suraj");
-
-        Customer customer = new Customer();
-        customer.setName("Amit");
-
-        Product bsnlProduct = new Product();
-        bsnlProduct.setName("bsnl");
-
-        Product railway = new Product();
-        railway.setName("railway");
-
-        HashSet<Product> products = new HashSet<>();
-        products.add(bsnlProduct);
-        products.add(railway);
-
-
-        invoice.setMerchant(merchant);
-        invoice.setCustomer(customer);
-        invoice.setProducts(products);
-
-
-        productRepo.save(bsnlProduct);
-        productRepo.save(railway);
-
-        merchantRepo.save(merchant);
-        customerRepo.save(customer);
-        invoiceRepo.save(invoice);
-
-
-//        Invoice invoice1 = new Invoice();
-//        invoice1.setMerchant(merchant);
-//        invoiceRepo.save(invoice1);
+//        Invoice invoice = new Invoice();
+//
+//        Merchant merchant = new Merchant();
+//        merchant.setName("Suraj");
+//
+//        Customer customer = new Customer();
+//        customer.setName("Amit");
+//
+//        Product bsnlProduct = new Product();
+//        bsnlProduct.setName("bsnl");
+//
+//        Product railway = new Product();
+//        railway.setName("railway");
+//
+//        HashSet<Product> products = new HashSet<>();
+//        products.add(bsnlProduct);
+//        products.add(railway);
+//
+//
+//        invoice.setMerchant(merchant);
+//        invoice.setCustomer(customer);
+//        invoice.setProducts(products);
+//
+//
+//        productRepo.save(bsnlProduct);
+//        productRepo.save(railway);
+//
+//        merchantRepo.save(merchant);
+//        customerRepo.save(customer);
+//        invoiceRepo.save(invoice);
+//
+//
+////        Invoice invoice1 = new Invoice();
+////        invoice1.setMerchant(merchant);
+////        invoiceRepo.save(invoice1);
     }
 }
