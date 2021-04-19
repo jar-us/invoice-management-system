@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static invoice.management.utility.JsonToModelConverter.getMerchantObject;
+import static invoice.management.utility.MerchantJsonToModelConverter.getMerchantObject;
 
 
 @Log4j2

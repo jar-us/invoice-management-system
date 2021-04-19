@@ -5,8 +5,8 @@ import invoice.management.model.MerchantModel;
 import invoice.management.repo.MerchantRepo;
 import org.springframework.stereotype.Service;
 
-import static invoice.management.utility.ModelConverter.convertMerchantEntityToMerchantModel;
-import static invoice.management.utility.ModelConverter.convertMerchantModelToMerchantEntity;
+import static invoice.management.utility.MerchantModelConverter.convertMerchantEntityToMerchantModel;
+import static invoice.management.utility.MerchantModelConverter.convertMerchantModelToMerchantEntity;
 
 @Service
 public class MerchantService {

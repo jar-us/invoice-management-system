@@ -9,7 +9,7 @@ import invoice.management.model.RegisterMerchantRequest;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class JsonToModelConverter {
+public class MerchantJsonToModelConverter {
     public static MerchantModel getMerchantObject(RegisterMerchantRequest request) {
         String firstName = (String) request.getMerchant().get(MerchantRequestAttributes.FIRST_NAME.label);
         String lastName = (String) request.getMerchant().get(MerchantRequestAttributes.LAST_NAME.label);
