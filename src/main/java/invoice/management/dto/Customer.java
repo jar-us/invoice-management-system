@@ -1,47 +1,30 @@
 package invoice.management.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.io.Serializable;
+import java.util.Collection;
 
-
-@AllArgsConstructor
 @Data
 @Entity
-@NoArgsConstructor
 @Table(name = "customer")
-public class Customer  {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
-    private Integer id;
+    private Long customerId;
 
-    @Column(name = "first_name")
+    @Column(name="firstName")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name="lastName")
     private String lastName;
 
-    @Column(name = "street")
-    private String street;
-
-    @OneToOne
-    @JoinColumn(name = "city_id")
-    private City cityId;
+    @Column(name = "phone")
+    private Long phone;
 
 
-    @OneToOne
-    @JoinColumn(name = "state_id")
-    private State stateId;
-
-
-    @OneToOne
-    @JoinColumn(name = "country_id")
-    private Country countryId;
-
-
+    @OneToMany(mappedBy = "customer")
+    private Collection<Invoice> invoices;
 }
